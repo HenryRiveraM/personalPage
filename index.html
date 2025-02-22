@@ -1,11 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
+    <title>Henry Rivera Personal Page</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class = "left">
+                <a>Henry Alejandro Rivera Mendez</a>
+            </div>
+            <div class = "right">
+                <a href = "aboutMe">About Me</a>
+                <a href = "#">Projects</a>
+                <a href = "#">Contact</a>
+            </div>
+    </nav>
+    </header>
+    <section id = "aboutMe">
+        <h2>Hello word!, I'm Henry</h2>
+        <div class = "headshot">
+            <picture>
+                <source srcset = "images/henry rivera.webp" type = "image/webp">
+                <img src = "images/henry rivera.jpg" alt = "Henry Rivera">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Hey! I'm Henry, a Systems Engineering student at Universidad Católica Boliviana, passionate about web development and backend programming.
+                With a solid background in Node.js, MySQL, and Python game development, I'm always eager to build creative solutions and take on new tech challenges!
+            </p>
+            <br>
+            <p>
+                Outside of career and academics, I enjoy playing tennis, play billar with my friends, watching series, and lifting weights!
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/henry_rivera___/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-square-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/henry-alejandro-rivera-mendez-9006bb267/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+    <div class="divider"></div>
+        <section id="projects-subsection">
+            <h2>Projects</h2>
+            <div class="project-subsection">
+                <h3>Software</h3>
+                <div #swiperRef="" class="swiper card-swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://github.com/stephanieran/floppy-fish" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/floppy-fish.webp" type="image/webp">
+                                <img src="images/floppy-fish.png" alt="Floppy Fish">
+                            </picture>
+                            <h4>Floppy Fish</h4>
+                            <h5><em>Java</em></h5>
+                            <p>Floppy Fish is a spinoff of Flappy Bird built in Java. Instead of gravity pulling the bird down, the buoyancy of the water pushes the fish up.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/stephanieran/circles" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/circles-1.webp" type="image/webp">
+                                <img src="images/circles-1.png" alt="Circles">
+                            </picture>
+                            <h4>Circles</h4>
+                            <h5><em>Swift, Firebase</em></h5>
+                            <p>Circles is a photo sharing app with daily prompts to encourage small groups of families and friends to stay in touch.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/stephanieran/github-issues" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/github issues.webp" type="image/webp">
+                                <img src="images/github issues.png" alt="Github Issues">
+                            </picture>
+                            <h4>Github Issues</h4>
+                            <h5><em>Swift, GitHub REST API</em></h5>
+                            <p>Github Issues is an iOS mobile application to streamline open/closed GitHub Issues posted in popular open-source repos for simple access.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/stephanieran/chibi-luffy" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/chibi-luffy.webp" type="image/webp">
+                                <img src="images/chibi-luffy.png" alt="Chibi Luffy">
+                            </picture>
+                            <h4>Chibi Luffy</h4>
+                            <h5><em>Swift, GitHub REST API</em></h5>
+                            <p>Chibi Luffy is an Instagram bot that reposts anime memes scraped from Reddit.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/stephanieran/functional-adventure" target="_blank" class="project-box">
+                            <picture>
+                                <source srcset="images/webp/haskell-text-game.webp" type="image/webp">
+                                <img src="images/haskell-text-game.png" alt="Functional Adventure">
+                            </picture>
+                            <h4>Functional Adventure</h4>
+                            <h5><em>Haskell</em></h5>
+                            <p>Functional adventure is a text-based adventure game with the goal of traversing the map to find a specific item.</p>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+        <section id="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-swift"></i>
+                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-github-alt"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="devicon-r-plain"></i>
+                <i class="devicon-c-plain-wordmark"></i>
+            </div>
     
+        <!-- Swiper JS -->
+        <footer>
+            <p>&copy; <span id="year"></span> Steph Ran. All Rights Reserved.</p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Automatically update the copyright year
+                document.getElementById('year').textContent = new Date().getFullYear();
+        
+                // Initialize Swiper
+                const swiper = new Swiper(".card-swiper", {
+                    centeredSlides: false,
+                    spaceBetween: 0,
+                    slidesPerView: 'auto'
+                });
+            });
+        </script>
 </body>
 </html>
